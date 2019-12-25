@@ -1,17 +1,31 @@
 /*
-==題目說明===
-輸入三個整數ABC，分別代表三角形的邊長，其中A ≧ B ≧ C，輸出該三角形為銳角、直角或鈍角三角形
-===輸入說明===
-輸入三個整數A、B、C (1000 ≧ A ≧ B ≧ C>0)
-===輸出說明===
-若為銳角三角形，輸出這個三角形是銳角der!
-若為直角三角形，輸出這個三角形是直角der yo~!
-若為鈍角三角形，輸出嗯~! 它是鈍角三角形。
+==肈ヘ弧===
+块俱计ABCだà娩ㄤいA ≠ B ≠ C块赣à綰àà┪秝àà
+===块弧===
+块俱计ABC (1000 ≠ A ≠ B ≠ C>0)
+===块弧===
+璝綰àà块硂à琌綰àder!
+璝àà块硂à琌àder yo~!
+璝秝àà块垛~! ウ琌秝àà
 */
-
 #include <stdio.h>
 
 int main()
 {
+	int a,b,c,n;
+	printf("块à娩(パ)\n");
+	scanf("%d%d%d",&a,&b,&c);	
+	if(a*a<b*b+c*c)
+	{
+		printf("硂à琌綰àà");
+	}
+	else if(a*a==b*b+c*c)
+	{
+		printf("硂à琌àà");
+	}
+	else if(a*a>b*b+c*c)
+	{
+		printf("硂à琌秝àà");
+	}
 	return 0;
 }
