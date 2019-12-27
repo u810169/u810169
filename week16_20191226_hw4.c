@@ -19,7 +19,6 @@ int main()
 	int sum_odd = 0;
 	int sum_even = 0;
 	int secret = 0;
-	char num_str[2];
 	printf("請輸入一組數字");
 	scanf("%d", &num);
 	/* sprintf() 將整數轉為字串 */
@@ -33,18 +32,12 @@ int main()
 	{
 		if((i+1)%2==0)
 		{			 
-			num_str[0] = str[i];
-			num_str[1] = '\0';
-			/* atoi() 將字串轉為整數 */
-			sum_even += atoi(num_str);
+			sum_even += (str[i] - 48);
 			printf("%c is even\n",str[i]);
 		}
 		else
-		{
-			num_str[0] = str[i];
-			num_str[1] = '\0';		
-			/* atoi() 將字串轉為整數 */
-			sum_odd += atoi(num_str);
+		{			
+			sum_odd += (str[i] - 48);
 			printf("%c is odd\n",str[i]);
 		}		
 	}
