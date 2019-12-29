@@ -1,20 +1,26 @@
 /*
-===題目說明===
-輸入兩個整數A、B，並輸出兩個整數間所有整數和
-===輸入說明===
-輸入兩個整數A、B (0<=A<B<=100)
-===輸出說明===
-輸出整數和
-===範例輸入輸出===
-
-
-===Hint===
-請用for迴圈完成此題，不可以使用梯形公式。
+===肈ヘ弧===
+块ㄢ俱计AB块ㄢ俱计丁┮Τ俱计㎝
+===块弧===
+块ㄢ俱计AB (0<=A<B<=100)
+===块弧===
+块俱计㎝
+===絛ㄒ块块===
 */
 
 #include <stdio.h>
 
 int main()
 {
+	int a,b;
+	int i = 0;
+	int sum = 0;
+	printf("块ㄢ俱计\n");
+	scanf("%d%d" ,&a ,&b);
+	for(i = a;i<=b;i++)
+	{
+		sum = sum + i ;
+	}
+	printf("俱计㎝%d",sum);
 	return 0;
 }
